@@ -2,6 +2,9 @@
 
 A clone website project for Business Cambodia news content. This repository contains a static HTML-based news website built to replicate the structure and functionality of a Cambodia business news portal.
 
+## 📋 Webpage Preview
+![Webpage_Screen](image/webpage%20screen.png)
+
 ## 📋 Project Overview
 
 This project is a front-end implementation of a news website focused on business-related content in Cambodia. It provides information about market trends, business news, and economic updates relevant to Cambodia.
