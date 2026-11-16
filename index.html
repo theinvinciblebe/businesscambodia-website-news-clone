@@ -1,641 +1,993 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <title>Project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- MANDATORY: Declare support for both light and dark themes to prevent FOUC -->
+    <meta name="color-scheme" content="light dark">
+
+    <title>Business Cambodia | ប្រភពព័ត៌មានធុរកិច្ចឈានមុខនៅកម្ពុជា</title>
+    <meta name="description"
+        content="គេហទំព័រព័ត៌មានពាណិជ្ជកម្ម ធុរកិច្ច អចលនទ្រព្យ ហិរញ្ញវត្ថុ បច្ចេកវិទ្យា និងភាពជាអ្នកដឹកនាំឈានមុខគេនៅកម្ពុជា">
+
+    <!-- Google Fonts: Kantumruy Pro (Khmer) & Plus Jakarta Sans (Modern Editorial) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #f1f1f1;">
-    <div class="main" >
-        <div class="main-menu">
-            <div class="logo">
-               <a href="#"><img src="/image/image/logo bc.png" alt=""></a> 
-            </div>
-            <div class="top-menu">
-                <a href="#" id="cxz" style="background-color:  rgb(141, 14, 14);">ព័ត៌មាន
-                    &nbsp; <i class="fas fa-angle-down" style="color: white;"></i> <span class="zxc">COVID-19</span> </a>
-                <a href="#">អចលនទ្រព្យ</a>
-                <a href="#">ភាពជាអ្នកដឺកនាំ</a>
-                <a href="#">កំពូលអ្នកលក់</a>
-                <a href="#">ចាប់ផ្តើមអជីវកម្ម</a>
-                <a href="#">មុខរបរបច្ចេកវិទ្យា</a>
-                <a href="#">ហិរញ្ញវត្ថុ</a>
-                <a href="#">កសិពាណិជ្ជកម្ម</a>
-                <a href="#">អត្ថបទ PR</a>
-            </div>
-            <div class="search">
-                <a href="#"><i class="fas fa-search"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="trending">
-           <div class="trending-now">
-            <p>TRENDING NOW</p>
-           </div>
-           <div class="maquee">
-            <marquee><i class="fas fa-angle-double-right"></i><span class="txt-run">
-                Although Tesla is going a little different, the giant still has unusual competitors, and the company that is chasing Tesla,
-                 which is mostly Chinese electric car manufacturers such as BYD, XPeng Inc.</span></marquee>
-           </div>
-    </div>
-    <div class="banner-image">
-        <img src="../image/Banner Covid-min.gif" alt="">
-    </div>
-    <div class="news">
-        <div class="top-news">
-                <div class="lefttop-news">
-                    <img src="../image/lefttop-news.png" alt="">
-                    <span>20 million page views and almost 2 millions unique visitors per month!</span>
+
+<body>
+
+    <!-- ================= TOP UTILITY BAR ================= -->
+    <div class="top-utility-bar">
+        <div class="container top-utility-content">
+            <div class="utility-left">
+                <div class="utility-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>ថ្ងៃចន្ទ ទី១៦ ខែវិច្ឆិកា ឆ្នាំ២០២៦</span>
                 </div>
-                <div class="righttop-news">
-                    <div class="righttop-news-top">
-                        <img src="../image/righttop-news-top.jpg" alt="">
-                        <span>20 million page views and almost 2 millions unique visitors per month!</span>
-                    </div>
-                    <div class="righttop-news-bottom">
-                        <div class="right01">
-                            <img src="../image/right01.jpg" alt="">
-                            <span>20 million page views and almost 2 millions unique visitors per month!</span>
-                        </div>
-                        <div class="right02">
-                            <img src="../image/right02.jpg" alt="">
-                            <span>20 million page views and almost 2 millions unique visitors per month!</span>
-                        </div>
-                    </div>
+                <div class="utility-weather">
+                    <i class="fas fa-sun" style="color: #f59e0b;"></i>
+                    <span>ភ្នំពេញ <span class="temp">31°C</span></span>
                 </div>
             </div>
-        </div>
-        <div class="main-content">
-            <div class="content-left">
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="utility-right">
+                <div class="utility-socials">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hot-news">
-                    <div class="title-txt">
-                        <div class="txt">
-                            <span>Hotnews</span>
-                        </div>
-                        <div class="none-txt">
-
-                        </div>
-                    </div>
-                    <div class="news-content">
-                        <div class="box-left-content">
-                            <div class="left-content-txt">
-                                <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                            </div>
-                            <div class="left-content-img">
-                                <img src="../image/left-content-img.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="box-right-content">
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="right-content">
-                                <div class="right-content-img">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="right-content-txt">
-                                    <span>In order to protect the safety of students from Omi, the Ministry of Education has introduced 9 measures to implement...</span><br><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-right">
-                <div class="app">
-                    <div class="app-txt">
-                        <span>Download App</span>
-                    </div>
-                    <div class="app-gif">
-                        <div class="gif-img">
-                            <div class="gif-img1">
-                                <img src="../image/gif-img1.png" alt="">
-                            </div>
-                            <div class="gif-img1">
-                                <img src="../image/gif-img2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-img-gif">
-                        <img src="../image/right-img-gif.gif" alt="">
-                    </div>
-                    <div class="right-img-gif">
-                        <img src="../image/right-img-gif1.gif" alt="">
-                    </div>
-                    <div class="right-img-gif">
-                        <img src="../image/right-img-gif3.jpg">
-                    </div>
-                    <div class="aa">
-                        <div class="head-right">
-                                <div class="text">
-                                    <p>Popular Articles</p>
-                                </div>
-                                <div class="nonetext">
-
-                                </div>
-                        </div>
-                        <div class="rightimg">
-                            <div class="rightimgaa">
-                                <div class="imgaa">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="txtaa">
-                                    <span> the Ministry of Education has introduced 9 measures to implement...</span><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="rightimgaa">
-                                <div class="imgaa">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="txtaa">
-                                    <span> the Ministry of Education has introduced 9 measures to implement...</span><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="rightimgaa">
-                                <div class="imgaa">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="txtaa">
-                                    <span> the Ministry of Education has introduced 9 measures to implement...</span><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="rightimgaa">
-                                <div class="imgaa">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="txtaa">
-                                    <span> the Ministry of Education has introduced 9 measures to implement...</span><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div>
-                            <div class="rightimgaa">
-                                <div class="imgaa">
-                                    <img src="../image/right-content-img.jpg" alt="">
-                                </div>
-                                <div class="txtaa">
-                                    <span> the Ministry of Education has introduced 9 measures to implement...</span><br>
-                                    <p><i class="fas fa-clock"></i> &nbsp;Feb 18,2022</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="ប្តូរពន្លឺ / Switch Theme">
+                    <i class="fas fa-moon"></i>
+                    <span class="theme-text">Dark Mode</span>
+                </button>
             </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <div class="footercont">
-        <div class="fot1">
-            <div class="fotimg">
-                <img src="../image/cover-min.png" alt=""><br><br>
-                <span><i class="fas fa-map-marker-alt"></i>&nbsp; # HH36, St 265, Sangkat Teok Laok III, Khan Toul Kork <br><br>
-                    <i class="fas fa-envelope"></i>&nbsp; gm.businesscambodia@gmail.com <br><br>
-                    <i class="fas fa-phone-volume"></i> &nbsp;+855 (0) 89 660 503 | +855 (0) 88 666 0503</span>
+
+    <!-- ================= MAIN HEADER & NAVIGATION ================= -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo-wrap">
+                <img src="image/logo bc.png" alt="Business Cambodia Logo" class="brand-logo-img">
+                <div class="brand-text-wrap">
+                    <span class="brand-name">BUSINESS CAMBODIA</span>
+                    <span class="brand-tagline">ប្រភពព័ត៌មានធុរកិច្ចឈានមុខ</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-link active">
+                        ព័ត៌មាន <i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fas fa-virus"></i> COVID-19 & សុខភាព</a></li>
+                        <li><a href="#"><i class="fas fa-chart-line"></i> សេដ្ឋកិច្ចជាតិ</a></li>
+                        <li><a href="#"><i class="fas fa-plane-departure"></i> ទេសចរណ៍ & សណ្ឋាគារ</a></li>
+                        <li><a href="#"><i class="fas fa-globe-asia"></i> ព័ត៌មានអន្តរជាតិ</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-link">អចលនទ្រព្យ</a>
+                <a href="#" class="nav-link">ភាពជាអ្នកដឹកនាំ</a>
+                <a href="#" class="nav-link">កំពូលអ្នកលក់</a>
+                <a href="#" class="nav-link">ចាប់ផ្តើមអាជីវកម្ម</a>
+                <a href="#" class="nav-link">មុខរបរបច្ចេកវិទ្យា</a>
+                <a href="#" class="nav-link">ហិរញ្ញវត្ថុ</a>
+                <a href="#" class="nav-link">កសិពាណិជ្ជកម្ម</a>
+                <a href="#" class="nav-link">អត្ថបទ PR</a>
+            </nav>
+
+            <!-- Header Actions (Search & Mobile Toggle) -->
+            <div class="header-actions">
+                <button class="action-icon-btn open-search-trigger" title="ស្វែងរក / Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="action-icon-btn mobile-menu-toggle" id="mobileMenuToggle" title="ម៉ឺនុយ / Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-        <div class="fot1">
-            <h3>Contact BUSINESS CAMBODIA</h3><br>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Hotline: +855 (0) 89 660 503 | +855 (0) 88 666 0503</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Advertising Section (+855) 17 300 755/093 300 755</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Book section (+855) 16 300 843/017 300 844</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Accounting (+855) 92 57 58 23</a></p>
-        </div>
-        <div class="fot1">
-            <h3>POPULAR CATEGORY</h3><br>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Latest News</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Starting a business</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Leadership</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Technology</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Real Estate</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Finance</a></p>
-            <p><i class="fas fa-angle-right"></i><a href="#">&nbsp;Top sellers</a></p>
+    </header>
+
+    <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-content">
+            <div class="drawer-header">
+                <div class="brand-text-wrap">
+                    <span class="brand-name" style="font-size: 1rem;">BUSINESS CAMBODIA</span>
+                    <span class="brand-tagline" style="color: rgba(255,255,255,0.9);">ម៉ឺនុយរុករក</span>
+                </div>
+                <button class="drawer-close-btn" id="drawerCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="drawer-nav-list">
+                <li><a href="#" class="drawer-nav-link active">ព័ត៌មានទាន់ហេតុការណ៍ <i
+                            class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">អចលនទ្រព្យ <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">ភាពជាអ្នកដឹកនាំ <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">កំពូលអ្នកលក់ <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">ចាប់ផ្តើមអាជីវកម្ម <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">មុខរបរបច្ចេកវិទ្យា <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">ហិរញ្ញវត្ថុ & ធនាគារ <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li><a href="#" class="drawer-nav-link">កសិពាណិជ្ជកម្ម <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="drawer-nav-link">អត្ថបទ PR <i class="fas fa-chevron-right"></i></a></li>
+            </ul>
         </div>
     </div>
-</div>
-    
+
+    <!-- ================= BREAKING / TRENDING TICKER ================= -->
+    <section class="ticker-section">
+        <div class="container ticker-wrap">
+            <div class="ticker-badge">
+                <span class="pulse-dot"></span>
+                <span>TRENDING NOW</span>
+            </div>
+            <div class="ticker-track-container">
+                <div class="ticker-slider">
+                    <div class="ticker-item active">
+                        <i class="fas fa-bolt"></i>
+                        <a href="#">ក្រុមហ៊ុន Tesla
+                            កំពុងប្រឈមការប្រកួតប្រជែងយ៉ាងខ្លាំងក្លាពីក្រុមហ៊ុនផលិតរថយន្តអគ្គិសនីចិនដូចជា BYD និង XPeng
+                            Inc.</a>
+                    </div>
+                    <div class="ticker-item">
+                        <i class="fas fa-chart-line"></i>
+                        <a href="#">ធនាគារជាតិនៃកម្ពុជាប្រកាសពង្រីកប្រព័ន្ធទូទាត់បាគង (Bakong)
+                            ទៅកាន់បណ្តាប្រទេសក្នុងតំបន់អាស៊ានបន្ថែមទៀត</a>
+                    </div>
+                    <div class="ticker-item">
+                        <i class="fas fa-building"></i>
+                        <a
+                            href="#">ទីផ្សារអចលនទ្រព្យនិងសំណង់បង្ហាញសញ្ញាងើបឡើងវិញជាវិជ្ជមានជាមួយនឹងគម្រោងហេដ្ឋារចនាសម្ព័ន្ធថ្មីៗ</a>
+                    </div>
+                    <div class="ticker-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <a href="#">រដ្ឋាភិបាលដាក់ចេញកញ្ចប់លើកទឹកចិត្តពន្ធដារថ្មីសម្រាប់សហគ្រាសធុនតូចនិងមធ្យម (SMEs)
+                            ក្នុងឆ្នាំ២០២៦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ticker-controls">
+                <button class="ticker-btn" id="tickerPrev" title="មុន / Previous"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="ticker-btn" id="tickerNext" title="បន្ទាប់ / Next"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ADVERTISEMENT BANNER (TOP) ================= -->
+    <div class="container ad-banner-top">
+        <div class="ad-card">
+            <span class="ad-tag">Advertisement • ពាណិជ្ជកម្ម</span>
+            <a href="#"><img src="image/Banner Covid-min.gif" alt="Covid Advisory Banner" loading="lazy"></a>
+        </div>
+    </div>
+
+    <!-- ================= FEATURED HERO SECTION (BENTO GRID) ================= -->
+    <section class="container featured-hero">
+        <div class="hero-grid">
+            <!-- Primary Big Featured Card -->
+            <article class="hero-card hero-card-primary">
+                <div class="hero-card-img-wrap">
+                    <img src="image/lefttop-news.png" alt="20 Million Page Views Business Cambodia">
+                </div>
+                <div class="hero-card-overlay"></div>
+                <div class="hero-card-content">
+                    <span class="card-category-badge gold">ព័ត៌មានពិសេស</span>
+                    <h2 class="hero-card-title">
+                        20 million page views and almost 2 millions unique visitors per month! កំណើនអ្នកអានដ៏អស្ចារ្យ
+                    </h2>
+                    <div class="hero-card-meta">
+                        <span><i class="far fa-user"></i> និពន្ធនាយក</span>
+                        <span><i class="far fa-clock"></i> ១៦ វិច្ឆិកា ២០២៦</span>
+                        <span><i class="far fa-eye"></i> 2.4M មើល</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Right Column Subgrid -->
+            <div class="hero-right-col">
+                <!-- Top Wide Secondary Card -->
+                <article class="hero-card hero-card-secondary">
+                    <div class="hero-card-img-wrap">
+                        <img src="image/righttop-news-top.jpg" alt="Business Growth Cambodia">
+                    </div>
+                    <div class="hero-card-overlay"></div>
+                    <div class="hero-card-content">
+                        <span class="card-category-badge">សេដ្ឋកិច្ច & វិនិយោគ</span>
+                        <h3 class="hero-card-title">
+                            កម្ពុជាសម្រេចបានកំណើនសេដ្ឋកិច្ចរឹងមាំ និងការវិនិយោគផ្ទាល់ពីបរទេសកើនឡើងគួរឱ្យកត់សម្គាល់
+                        </h3>
+                        <div class="hero-card-meta">
+                            <span><i class="far fa-clock"></i> ៣០ នាទីមុន</span>
+                            <span><i class="fas fa-fire" style="color: #ef4444;"></i> កំពុងពេញនិយម</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bottom Two Cards -->
+                <div class="hero-right-subgrid">
+                    <article class="hero-card hero-card-tertiary">
+                        <div class="hero-card-img-wrap">
+                            <img src="image/right01.jpg" alt="Starting a Business Cambodia">
+                        </div>
+                        <div class="hero-card-overlay"></div>
+                        <div class="hero-card-content">
+                            <span class="card-category-badge">អាជីវកម្ម</span>
+                            <h4 class="hero-card-title">
+                                គន្លឹះសំខាន់ៗទាំង ៥ ក្នុងការចាប់ផ្តើមអាជីវកម្មខ្នាតតូចឱ្យទទួលបានជោគជ័យ
+                            </h4>
+                            <div class="hero-card-meta">
+                                <span><i class="far fa-clock"></i> ២ ម៉ោងមុន</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hero-card hero-card-tertiary">
+                        <div class="hero-card-img-wrap">
+                            <img src="image/right02.jpg" alt="Real Estate Market Growth">
+                        </div>
+                        <div class="hero-card-overlay"></div>
+                        <div class="hero-card-content">
+                            <span class="card-category-badge">អចលនទ្រព្យ</span>
+                            <h4 class="hero-card-title">
+                                ទីផ្សារអចលនទ្រព្យនៅកម្ពុជាបង្ហាញសញ្ញាវិជ្ជមានឡើងវិញក្នុងឆ្នាំ២០២៦
+                            </h4>
+                            <div class="hero-card-meta">
+                                <span><i class="far fa-clock"></i> ៤ ម៉ោងមុន</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT LAYOUT ================= -->
+    <main class="container main-content-layout">
+        <!-- LEFT NEWS FEED -->
+        <div class="news-feed">
+
+            <!-- SECTION 1: HOT NEWS (ព័ត៌មានក្តៅៗ) -->
+            <section class="category-section">
+                <div class="section-header-bar">
+                    <div class="section-title-wrap">
+                        <div class="section-accent-pill"></div>
+                        <h2 class="section-title">
+                            ព័ត៌មានក្តៅៗ <span class="section-title-en">Hot News</span>
+                        </h2>
+                    </div>
+                    <a href="#" class="section-view-all">មើលទាំងអស់ <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-news-grid">
+                    <!-- Big Lead Article -->
+                    <article class="lead-news-card">
+                        <div class="lead-img-box">
+                            <img src="image/left-content-img.jpg" alt="Health Safety Measures" loading="lazy">
+                        </div>
+                        <div class="lead-news-content">
+                            <span class="card-category-badge" style="width: fit-content;">អប់រំ & សុខភាព</span>
+                            <h3 class="lead-news-title">
+                                ដើម្បីការពារសុវត្ថិភាពសិស្សានុសិស្ស ក្រសួងអប់រំបានដាក់ចេញវិធានការចំនួន ៩
+                                ចំណុចយ៉ាងម៉ឺងម៉ាត់
+                            </h3>
+                            <p class="lead-news-excerpt">
+                                វិធានការសុវត្ថិភាពថ្មីនេះ ត្រូវបានរៀបចំឡើងដើម្បីធានាដំណើរការសិក្សាប្រកបដោយនិរន្តរភាព
+                                និងកាត់បន្ថយហានិភ័យសុខភាពក្នុងគ្រឹះស្ថានសិក្សាទូទាំងប្រទេស។
+                            </p>
+                            <div class="news-card-meta">
+                                <span><i class="far fa-user"></i> បុគ្គលិកព័ត៌មាន</span>
+                                <span><i class="far fa-clock"></i> Feb 18, 2026</span>
+                                <span><i class="far fa-eye"></i> 14.2k</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stacked Secondary News -->
+                    <div class="stacked-news-list">
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/right-content-img.jpg" alt="Student Health Guidelines" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">សង្គម</span>
+                                <h4 class="compact-title">
+                                    ការរៀបចំវិធានការអនាម័យនិងសុខាភិបាលតាមសាលារៀនដើម្បីទប់ស្កាត់ការឆ្លងរាលដាល
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 18, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/header.jfif" alt="National Bank Bakong Payment" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">ហិរញ្ញវត្ថុ</span>
+                                <h4 class="compact-title">
+                                    ធនាគារជាតិនៃកម្ពុជាជំរុញការប្រើប្រាស់ប្រាក់រៀលនិងប្រព័ន្ធទូទាត់ឌីជីថលឆ្លងដែន
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 18, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/header3.jfif" alt="Business Strategy Interview" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">ភាពជាអ្នកដឹកនាំ</span>
+                                <h4 class="compact-title">
+                                    បទពិសោធន៍និងយុទ្ធសាស្ត្រដឹកនាំអាជីវកម្មក្នុងបរិបទសេដ្ឋកិច្ចឌីជីថលថ្មី
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 17, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MID-FEED PROMOTIONAL BANNER -->
+            <div class="infeed-promo-banner">
+                <a href="#"><img src="image/banner-eshop-1.jpg" alt="E-Shop Promotion Banner" loading="lazy"></a>
+            </div>
+
+            <!-- SECTION 2: REAL ESTATE (អចលនទ្រព្យ & សំណង់) -->
+            <section class="category-section">
+                <div class="section-header-bar">
+                    <div class="section-title-wrap">
+                        <div class="section-accent-pill"></div>
+                        <h2 class="section-title">
+                            អចលនទ្រព្យ & សំណង់ <span class="section-title-en">Real Estate</span>
+                        </h2>
+                    </div>
+                    <a href="#" class="section-view-all">មើលទាំងអស់ <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-news-grid">
+                    <!-- Big Lead Article -->
+                    <article class="lead-news-card">
+                        <div class="lead-img-box">
+                            <img src="image/angkor.jfif" alt="Siem Reap Tourism and Heritage" loading="lazy">
+                        </div>
+                        <div class="lead-news-content">
+                            <span class="card-category-badge" style="width: fit-content;">អភិវឌ្ឍន៍តំបន់</span>
+                            <h3 class="lead-news-title">
+                                គម្រោងអភិវឌ្ឍន៍ហេដ្ឋារចនាសម្ព័ន្ធទេសចរណ៍ និងអាកាសយានដ្ឋានអន្តរជាតិថ្មីទាក់ទាញវិនិយោគិន
+                            </h3>
+                            <p class="lead-news-excerpt">
+                                ការបើកដំណើរការហេដ្ឋារចនាសម្ព័ន្ធតភ្ជាប់ថ្មីកំពុងជំរុញសន្ទុះវិនិយោគក្នុងវិស័យបដិសណ្ឋារកិច្ច
+                                និងអចលនទ្រព្យពាណិជ្ជកម្មនៅខេត្តសៀមរាប។
+                            </p>
+                            <div class="news-card-meta">
+                                <span><i class="far fa-user"></i> អត្ថបទស្រាវជ្រាវ</span>
+                                <span><i class="far fa-clock"></i> Feb 17, 2026</span>
+                                <span><i class="far fa-eye"></i> 18.5k</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stacked Secondary News -->
+                    <div class="stacked-news-list">
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/angkorwat2.jfif" alt="Residential Growth" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge" style="font-size: 0.65rem; padding: 2px 6px;">បុរី &
+                                    ដីធ្លី</span>
+                                <h4 class="compact-title">
+                                    តម្រូវការដីធ្លីនិងលំនៅឋានបន្តកើនឡើងនៅតំបន់សក្តានុពលជុំវិញរាជធានីភ្នំពេញ
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 16, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/angkorwat3.jfif" alt="Sustainable Architecture" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">សំណង់បៃតង</span>
+                                <h4 class="compact-title">
+                                    បទដ្ឋានថ្មីនៃសំណង់បៃតងនិងនិរន្តរភាពបរិស្ថានក្នុងវិស័យអចលនទ្រព្យទំនើប
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 15, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/images (3).jfif" alt="Condo Investment Trends" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">ការវិនិយោគ</span>
+                                <h4 class="compact-title">
+                                    ការវិភាគទីផ្សារខុនដូនិងឱកាសជួលត្រឡប់មកវិញសម្រាប់វិនិយោគិនជាតិនិងអន្តរជាតិ
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 14, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: TECH & INNOVATION (មុខរបរបច្ចេកវិទ្យា) -->
+            <section class="category-section">
+                <div class="section-header-bar">
+                    <div class="section-title-wrap">
+                        <div class="section-accent-pill"></div>
+                        <h2 class="section-title">
+                            មុខរបរបច្ចេកវិទ្យា <span class="section-title-en">Technology</span>
+                        </h2>
+                    </div>
+                    <a href="#" class="section-view-all">មើលទាំងអស់ <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-news-grid">
+                    <!-- Big Lead Article -->
+                    <article class="lead-news-card">
+                        <div class="lead-img-box">
+                            <img src="image/graphic card.jpg" alt="AI & Hardware Revolution" loading="lazy">
+                        </div>
+                        <div class="lead-news-content">
+                            <span class="card-category-badge" style="width: fit-content;">AI & HARDWARE</span>
+                            <h3 class="lead-news-title">
+                                បច្ចេកវិទ្យា AI និងក្រាហ្វិកកាត (GPU)
+                                ជំនាន់ថ្មីកំពុងផ្លាស់ប្តូរឧស្សាហកម្មកុំព្យូទ័រពិភពលោក
+                            </h3>
+                            <p class="lead-news-excerpt">
+                                តម្រូវការបន្ទះឈីបសម្រាប់ដំណើរការបញ្ញាសិប្បនិម្មិត (AI)
+                                និងមជ្ឈមណ្ឌលទិន្នន័យបានបង្កើតឱកាសធុរកិច្ចដ៏ធំធេងសម្រាប់ក្រុមហ៊ុនបច្ចេកវិទ្យា។
+                            </p>
+                            <div class="news-card-meta">
+                                <span><i class="far fa-user"></i> ផ្នែកបច្ចេកវិទ្យា</span>
+                                <span><i class="far fa-clock"></i> Feb 16, 2026</span>
+                                <span><i class="far fa-eye"></i> 25.1k</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stacked Secondary News -->
+                    <div class="stacked-news-list">
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/Grand_Theft_Auto_V.png" alt="Gaming Industry Revenue" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge" style="font-size: 0.65rem; padding: 2px 6px;">ហ្គេម &
+                                    កម្សាន្ត</span>
+                                <h4 class="compact-title">
+                                    ឧស្សាហកម្មហ្គេមនិងកម្សាន្តឌីជីថលបង្កើតប្រាក់ចំណូលរាប់ពាន់លានដុល្លារទូទាំងពិភពលោក
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 15, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/images (4).jfif" alt="Cybersecurity for Business" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">សុវត្ថិភាពឌីជីថល</span>
+                                <h4 class="compact-title">
+                                    សារៈសំខាន់នៃសន្តិសុខតាមប្រព័ន្ធអ៊ីនធឺណិត (Cybersecurity) សម្រាប់សហគ្រាសក្នុងស្រុក
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 14, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/images (5).jfif" alt="Digital Payment Ecosystem" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">FINTECH</span>
+                                <h4 class="compact-title">
+                                    ការផ្លាស់ប្តូរឌីជីថល (Digital Transformation)
+                                    ជួយបង្កើនប្រសិទ្ធភាពការងារនិងកាត់បន្ថយចំណាយ
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 13, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: BUSINESS & FINANCE (ធុរកិច្ច & ហិរញ្ញវត្ថុ) -->
+            <section class="category-section">
+                <div class="section-header-bar">
+                    <div class="section-title-wrap">
+                        <div class="section-accent-pill"></div>
+                        <h2 class="section-title">
+                            ធុរកិច្ច & ហិរញ្ញវត្ថុ <span class="section-title-en">Business & Finance</span>
+                        </h2>
+                    </div>
+                    <a href="#" class="section-view-all">មើលទាំងអស់ <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-news-grid">
+                    <!-- Big Lead Article -->
+                    <article class="lead-news-card">
+                        <div class="lead-img-box">
+                            <img src="image/img_acledatoanchet2.jpg" alt="ACLEDA Bank Digital Services" loading="lazy">
+                        </div>
+                        <div class="lead-news-content">
+                            <span class="card-category-badge" style="width: fit-content;">ធនាគារឌីជីថល</span>
+                            <h3 class="lead-news-title">
+                                ធនាគារ អេស៊ីលីដា បន្តធ្វើទំនើបកម្មសេវាធនាគារឌីជីថល "អេស៊ីលីដាម៉ូបាល"
+                                ផ្តល់ភាពងាយស្រួលដល់អតិថិជន
+                            </h3>
+                            <p class="lead-news-excerpt">
+                                ការអភិវឌ្ឍន៍មុខងារទូទាត់ប្រាក់ទំនើប
+                                និងសុវត្ថិភាពខ្ពស់ឆ្លើយតបទៅនឹងតម្រូវការប្រតិបត្តិការហិរញ្ញវត្ថុប្រចាំថ្ងៃរបស់ប្រជាពលរដ្ឋ
+                                និងអាជីវកម្ម។
+                            </p>
+                            <div class="news-card-meta">
+                                <span><i class="far fa-user"></i> ព័ត៌មានហិរញ្ញវត្ថុ</span>
+                                <span><i class="far fa-clock"></i> Feb 15, 2026</span>
+                                <span><i class="far fa-eye"></i> 32.4k</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Stacked Secondary News -->
+                    <div class="stacked-news-list">
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/advisory.jpg" alt="Business Advisory Services" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">ប្រឹក្សាអាជីវកម្ម</span>
+                                <h4 class="compact-title">
+                                    សេវាកម្មប្រឹក្សាយោបល់អាជីវកម្មនិងផែនការយុទ្ធសាស្ត្រពង្រីកទីផ្សារសម្រាប់សហគ្រាសថ្មី
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 14, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/images (8).jfif" alt="Cash Flow Management" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">គ្រប់គ្រងលុយ</span>
+                                <h4 class="compact-title">
+                                    គន្លឹះគ្រប់គ្រងលំហូរសាច់ប្រាក់ (Cash Flow) ឱ្យមានប្រសិទ្ធភាពខ្ពស់ក្នុងគ្រាលំបាក
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 13, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="compact-news-card">
+                            <div class="compact-thumb">
+                                <img src="image/images (9).jfif" alt="Agribusiness Export" loading="lazy">
+                            </div>
+                            <div class="compact-details">
+                                <span class="card-category-badge"
+                                    style="font-size: 0.65rem; padding: 2px 6px;">កសិពាណិជ្ជកម្ម</span>
+                                <h4 class="compact-title">
+                                    ឱកាសវិនិយោគក្នុងវិស័យកសិឧស្សាហកម្មកែច្នៃសម្រាប់នាំចេញទៅកាន់ទីផ្សារពិភពលោក
+                                </h4>
+                                <div class="news-card-meta">
+                                    <span><i class="far fa-clock"></i> Feb 12, 2026</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- RIGHT STICKY SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-sticky-wrap">
+
+                <!-- WIDGET 1: DOWNLOAD MOBILE APP -->
+                <div class="sidebar-widget app-download-widget">
+                    <div class="app-widget-content">
+                        <div class="app-widget-header">
+                            <img src="image/logo bc.png" alt="Business Cambodia App" class="app-widget-icon">
+                            <div class="app-widget-text">
+                                <h4>ទាញយកកម្មវិធី</h4>
+                                <p>អានព័ត៌មានលឿនរហ័សគ្រប់ពេលវេលា</p>
+                            </div>
+                        </div>
+                        <div class="app-buttons-wrap">
+                            <a href="#" class="app-store-badge" title="Download on App Store">
+                                <img src="image/gif-img1.png" alt="App Store">
+                            </a>
+                            <a href="#" class="app-store-badge" title="Get it on Google Play">
+                                <img src="image/gif-img2.png" alt="Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WIDGET 2: SPONSOR PROMOTION GIF -->
+                <div class="sidebar-ad-card">
+                    <span class="ad-tag">Sponsored • ឧបត្ថម្ភ</span>
+                    <a href="#"><img src="image/right-img-gif.gif" alt="Sponsor Promotion" loading="lazy"></a>
+                </div>
+
+                <!-- WIDGET 3: POPULAR ARTICLES (TABBED WIDGET) -->
+                <div class="sidebar-widget">
+                    <div class="widget-header">
+                        <h3 class="widget-title">
+                            <i class="fas fa-chart-line"></i> អត្ថបទពេញនិយម
+                        </h3>
+                    </div>
+
+                    <!-- Tabs Navigation -->
+                    <div class="sidebar-tabs-nav">
+                        <button class="tab-btn active" data-target="tab-popular">ពេញនិយម</button>
+                        <button class="tab-btn" data-target="tab-latest">ថ្មីៗបំផុត</button>
+                        <button class="tab-btn" data-target="tab-opinion">វិចារណកថា</button>
+                    </div>
+
+                    <!-- Tab Pane: Popular -->
+                    <div class="tab-pane active" id="tab-popular">
+                        <article class="ranked-article-item">
+                            <span class="rank-badge">1</span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (1).jfif" alt="Popular Article 1">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    រដ្ឋាភិបាលដាក់ចេញវិធានការលើកកម្ពស់អាជីវកម្មខ្នាតតូចនិងមធ្យមនៅកម្ពុជា
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> ថ្ងៃនេះ • 45k មើល</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge">2</span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (2).jfif" alt="Popular Article 2">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    យុទ្ធសាស្ត្រគ្រប់គ្រងហិរញ្ញវត្ថុសម្រាប់អ្នកចាប់ផ្តើមរកស៊ីដំបូងគេ
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> ម្សិលមិញ • 38k មើល</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge">3</span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (10).jfif" alt="Popular Article 3">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    គំរូជោគជ័យរបស់សហគ្រិនវ័យក្មេងក្នុងការកែច្នៃផលិតផលកសិកម្មក្នុងស្រុក
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> 2 ថ្ងៃមុន • 29k មើល</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge">4</span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (11).jfif" alt="Popular Article 4">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    កត្តាសំខាន់ៗដែលធ្វើឱ្យការលក់លើប្រព័ន្ធអនឡាញកើនឡើងទ្វេដង
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> 3 ថ្ងៃមុន • 24k មើល</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge">5</span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (12).jfif" alt="Popular Article 5">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    ទស្សនវិស័យអភិវឌ្ឍន៍សេដ្ឋកិច្ចឌីជីថលកម្ពុជាឆ្ពោះទៅកាន់ឆ្នាំ២០៣០
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> 4 ថ្ងៃមុន • 19k មើល</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Tab Pane: Latest -->
+                    <div class="tab-pane" id="tab-latest">
+                        <article class="ranked-article-item">
+                            <span class="rank-badge"><i class="fas fa-bolt"></i></span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/header1.jfif" alt="Latest Article 1">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    តម្លៃមាសនិងអត្រាប្តូរប្រាក់នៅលើទីផ្សារអន្តរជាតិថ្ងៃនេះ
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> ១៥ នាទីមុន</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge"><i class="fas fa-bolt"></i></span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/header2.png" alt="Latest Article 2">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    ការនាំចេញកសិផលកម្ពុជាកើនឡើងជាគំហុកក្នុងត្រីមាសទីមួយ
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> ៤០ នាទីមុន</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge"><i class="fas fa-bolt"></i></span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/download.jfif" alt="Latest Article 3">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    ពិព័រណ៍ពាណិជ្ជកម្មនិងវិនិយោគកម្ពុជា-អន្តរជាតិត្រៀមបើកដំណើរការ
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-clock"></i> ១ ម៉ោងមុន</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Tab Pane: Opinion -->
+                    <div class="tab-pane" id="tab-opinion">
+                        <article class="ranked-article-item">
+                            <span class="rank-badge"><i class="fas fa-pen-nib"></i></span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (6).jfif" alt="Opinion 1">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    តើធ្វើដូចម្តេចដើម្បីកសាងវប្បធម៌ស្មោះត្រង់និងច្នៃប្រឌិតក្នុងស្ថាប័ន?
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-user"></i> ដោយ៖ លោកបណ្ឌិត វិចារណកថា</span>
+                            </div>
+                        </article>
+
+                        <article class="ranked-article-item">
+                            <span class="rank-badge"><i class="fas fa-pen-nib"></i></span>
+                            <div class="ranked-article-thumb">
+                                <img src="image/images (8).jfif" alt="Opinion 2">
+                            </div>
+                            <div class="ranked-article-details">
+                                <h4 class="ranked-article-title">
+                                    កំហុសឆ្គងធំៗទាំងបីដែលអ្នកគ្រប់គ្រងវ័យក្មេងតែងតែជួបប្រទះ
+                                </h4>
+                                <span class="ranked-meta"><i class="far fa-user"></i> ដោយ៖
+                                    គ្រូបង្វឹកភាពជាអ្នកដឹកនាំ</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- WIDGET 4: SECONDARY SPONSOR AD -->
+                <div class="sidebar-ad-card">
+                    <span class="ad-tag">Advertisement • ពាណិជ្ជកម្ម</span>
+                    <a href="#"><img src="image/right-img-gif1.gif" alt="Digital Banking Promo" loading="lazy"></a>
+                </div>
+
+                <!-- WIDGET 5: NEWSLETTER SUBSCRIPTION -->
+                <div class="sidebar-widget newsletter-widget">
+                    <div class="widget-header">
+                        <h3 class="widget-title">
+                            <i class="far fa-envelope"></i> ព្រឹត្តិបត្រព័ត៌មាន
+                        </h3>
+                    </div>
+                    <div class="newsletter-box">
+                        <p>ទទួលបានការវិភាគស៊ីជម្រៅ និងព័ត៌មានធុរកិច្ចសំខាន់ៗជារៀងរាល់ព្រឹកដោយឥតគិតថ្លៃ។</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" id="newsletterEmail" name="email" placeholder="អ៊ីមែលរបស់អ្នក (Your Email)" required
+                                class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">ចុះឈ្មោះទទួលព័ត៌មាន</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- WIDGET 6: THIRD SPONSOR AD -->
+                <div class="sidebar-ad-card">
+                    <a href="#"><img src="image/right-img-gif3.jpg" alt="Business Advisory Ad" loading="lazy"></a>
+                </div>
+
+            </div>
+        </aside>
+    </main>
+
+    <!-- ================= EDITORIAL FOOTER ================= -->
+    <footer class="main-footer">
+        <!-- Footer Top Row -->
+        <div class="footer-top-row">
+            <div class="container footer-cta-container">
+                <div class="footer-cta-text">
+                    <h3>BUSINESS CAMBODIA</h3>
+                    <p>គេហទំព័រព័ត៌មានពាណិជ្ជកម្ម និងសេដ្ឋកិច្ចដែលគួរឱ្យទុកចិត្តបំផុតនៅកម្ពុជា</p>
+                </div>
+                <div class="footer-social-links">
+                    <a href="#" class="footer-social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-btn" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="footer-social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer 4 Columns -->
+        <div class="container footer-main-columns">
+            <!-- Col 1: About & Contact -->
+            <div class="footer-col">
+                <img src="image/cover-min.png" alt="Business Cambodia Brand Cover" class="footer-brand-cover">
+                <p class="footer-about-text">
+                    Business Cambodia ត្រូវបានបង្កើតឡើងក្នុងគោលបំណងលើកកម្ពស់ការយល់ដឹងអំពីធុរកិច្ច សហគ្រិនភាព
+                    និងចំណេះដឹងហិរញ្ញវត្ថុដល់ប្រជាជនកម្ពុជា។
+                </p>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span># HH36, ផ្លូវ 265, សង្កាត់ទឹកល្អក់ទី៣, ខណ្ឌទួលគោក, រាជធានីភ្នំពេញ</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>gm.businesscambodia@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+855 (0) 89 660 503 / 088 666 0503</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 2: Contact Departments -->
+            <div class="footer-col">
+                <h4 class="footer-heading">ទំនាក់ទំនងផ្នែក</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ខ្សែទូរស័ព្ទទាន់ហេតុការណ៍ (Hotline)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ផ្នែកផ្សព្វផ្សាយពាណិជ្ជកម្ម (Ad Section)</a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ផ្នែកសៀវភៅពាណិជ្ជកម្ម (Book Section)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ផ្នែកគណនេយ្យនិងហិរញ្ញវត្ថុ (Accounting)</a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ទំនាក់ទំនងការងារ (Careers)</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Categories -->
+            <div class="footer-col">
+                <h4 class="footer-heading">ជំពូកពេញនិយម</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ព័ត៌មានទាន់ហេតុការណ៍ (Breaking News)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ចាប់ផ្តើមអាជីវកម្ម (Startups)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ភាពជាអ្នកដឹកនាំ (Leadership)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> មុខរបរបច្ចេកវិទ្យា (Technology)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> អចលនទ្រព្យ (Real Estate)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ហិរញ្ញវត្ថុ & វិនិយោគ (Finance)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> កំពូលអ្នកលក់ (Top Sellers)</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Mobile App & Services -->
+            <div class="footer-col">
+                <h4 class="footer-heading">កម្មវិធីទូរស័ព្ទ</h4>
+                <p class="footer-about-text">
+                    ទាញយកកម្មវិធី Business Cambodia App ឥឡូវនេះ
+                    ដើម្បីទទួលបានបទពិសោធន៍អានព័ត៌មានដ៏សម្បូរបែបនៅលើទូរស័ព្ទរបស់អ្នក។
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 0.5rem;">
+                    <a href="#" style="max-width: 160px;"><img src="image/gif-img1.png" alt="App Store"
+                            style="width: 100%;"></a>
+                    <a href="#" style="max-width: 160px;"><img src="image/gif-img2.png" alt="Google Play"
+                            style="width: 100%;"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Legal -->
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <div>
+                    រក្សាសិទ្ធិគ្រប់យ៉ាង © ២០២៦ Business Cambodia. All Rights Reserved.
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#">គោលការណ៍ឯកជនភាព</a>
+                    <a href="#">លក្ខខណ្ឌប្រើប្រាស់</a>
+                    <a href="#">ផ្សាយពាណិជ្ជកម្មជាមួយយើង</a>
+                    <a href="#">អំពីយើង</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING BACK TO TOP BUTTON ================= -->
+    <button class="back-to-top-btn" id="backToTopBtn" title="ឡើងលើវិញ / Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ================= SEARCH MODAL ================= -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-box">
+            <div class="search-modal-header">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="វាយបញ្ចូលពាក្យគន្លឹះដើម្បីស្វែងរក... (Type to search)"
+                    class="search-input" id="mainSearchInput">
+                <button class="search-close-btn" id="closeSearchBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-suggestions">
+                    <h5>ពាក្យគន្លឹះស្វែងរកច្រើន (Popular Searches)</h5>
+                    <div class="search-tags">
+                        <span class="search-tag-pill">អចលនទ្រព្យ</span>
+                        <span class="search-tag-pill">ចាប់ផ្តើមអាជីវកម្ម</span>
+                        <span class="search-tag-pill">បាគង (Bakong)</span>
+                        <span class="search-tag-pill">បច្ចេកវិទ្យា AI</span>
+                        <span class="search-tag-pill">ហិរញ្ញវត្ថុ</span>
+                        <span class="search-tag-pill">រថយន្តអគ្គិសនី EV</span>
+                        <span class="search-tag-pill">កសិពាណិជ្ជកម្ម</span>
+                        <span class="search-tag-pill">ភាពជាអ្នកដឹកនាំ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
